@@ -50,16 +50,17 @@
           <div class="u-line"></div>
           <div class="message message--info">
             <p class="message__text">
-              Ihr Passwort wurde erfolgreich geändert.
+              Externe Anmeldung. Aus Sicherheitsgründen sind nicht alle Apps
+              verfügbar.
             </p>
           </div>
           <div class="u-center-text u-margin-top-medium u-margin-bottom-medium">
-            <h1 class="heading-primary">Mit Account anmelden</h1>
+            <h1 class="heading-primary">Einmal-PIN eingeben</h1>
           </div>
           <div class="sign-in__form">
             <div class="u-margin-top-small">
               <label for="email" class="form-label custom-form__input-label"
-                >Benutzer</label
+                >Einmal-PIN</label
               >
               <input
                 type="email"
@@ -67,24 +68,11 @@
                 id="email"
                 aria-describedby="basic-addon3"
               />
+              <span class="sign-in__error">Nutzername nicht bekannt</span>
             </div>
-            <div class="u-margin-top-small">
-              <label for="password" class="form-label custom-form__input-label"
-                >Passwort</label
-              >
-              <input
-                type="password"
-                class="form-control custom-form__input"
-                id="password"
-                aria-describedby="basic-addon3"
-              />
-            </div>
-            <div class="sign-in__forget">
-              <a class="button-link" href="#"> Passwort vergessen? </a>
-            </div>
-            <div class="u-margin-bottom-large">
+            <div class="u-margin-bottom-large u-margin-top-medium">
               <button class="button button--full button--primary">
-                Anmelden
+                Anmelden (extern)
               </button>
             </div>
             <p class="paragraph u-center-text">

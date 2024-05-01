@@ -7,6 +7,7 @@
   border-bottom: 1px solid $color-black-09;
   z-index: 1;
   flex-wrap: wrap;
+  min-height: 6.2rem;
 
   @include addMediaQuery(laptop) {
     flex-direction: column-reverse;
@@ -15,6 +16,7 @@
   &__title {
     @include addMediaQuery(laptop) {
       margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   }
 

@@ -44,4 +44,9 @@
       padding: 0 3rem 1rem 3rem;
     }
   }
+
+  &__error {
+    font-size: 1.6rem;
+    color: $color-new-red;
+  }
 }

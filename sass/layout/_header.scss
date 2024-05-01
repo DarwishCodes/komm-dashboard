@@ -2,11 +2,14 @@
   position: fixed;
   width: 100%;
   z-index: 999999;
-
+  background-color: $color-primary;
+  min-height: 8.4rem;
   &__wrap {
     background-color: $color-primary;
     width: 100%;
     //   padding: 2.1rem 3.5rem;
+    min-height: 8.4rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +24,12 @@
   &__logo-box {
     @include addMediaQuery(laptop) {
       display: none;
+    }
+
+    &--keep {
+      @include addMediaQuery(laptop) {
+        display: block !important;
+      }
     }
   }
 
