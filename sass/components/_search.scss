@@ -1,0 +1,31 @@
+.search {
+  width: 29rem;
+  flex-wrap: nowrap;
+  &__group {
+  }
+
+  &__icon-box {
+    background-color: $color-white;
+    border: none;
+    height: 4rem;
+    border-radius: 50px;
+    padding-left: 1rem;
+
+    i {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__input {
+    color: $color-primary-80;
+    border: none;
+    height: 4rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+
+    &:focus {
+      border-color: $color-white;
+      box-shadow: none;
+    }
+  }
+}

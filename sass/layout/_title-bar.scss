@@ -1,0 +1,66 @@
+.tool-bar {
+  background-color: $color-grey;
+  padding: 0rem 4.3rem 0 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-black-09;
+  z-index: 1;
+  flex-wrap: wrap;
+
+  @include addMediaQuery(laptop) {
+    flex-direction: column-reverse;
+  }
+
+  &__title {
+    @include addMediaQuery(laptop) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__search {
+    @include addMediaQuery(laptop) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__tab {
+    position: relative;
+    text-decoration: none;
+    color: $color-primary-80;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.7rem 1.2rem;
+    margin: 0 1rem;
+
+    &:hover {
+      background-color: $color-primary-8;
+      color: $color-primary;
+    }
+
+    &--active {
+      font-weight: 900;
+      color: $color-primary;
+      padding: 1.7rem 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary;
+        bottom: 0;
+        left: 0;
+      }
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+}

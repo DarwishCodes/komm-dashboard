@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  margin: 0 0;
+  &__arrow {
+    position: absolute;
+    z-index: 555;
+    padding: 0 2.2rem;
+    background-color: $color-white;
+    height: 21.1rem;
+    bottom: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-grey-2;
+    cursor: pointer;
+
+    i {
+      font-size: 2.4rem;
+      color: $color-primary;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+    &--left {
+      left: 0rem;
+      display: none;
+    }
+
+    &--right {
+      right: 0rem;
+    }
+  }
+
+  .owl-item {
+    width: 40rem;
+  }
+}

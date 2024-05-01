@@ -1,0 +1,178 @@
+.custom-form {
+  &__group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.3rem;
+  }
+
+  &__input-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__input {
+    border: 1px solid $color-black-16;
+    height: 5rem;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 1.4rem 2rem;
+
+    &--text-area {
+      height: auto;
+    }
+
+    &--required {
+      border: 1px solid $color-new-red;
+    }
+
+    &:hover {
+      border: 1px solid $color-black-50;
+    }
+
+    &:focus:invalid {
+      border: 1px solid $color-new-red;
+    }
+
+    &--disabled {
+      background-color: $color-primary-8;
+      color: $color-primary-60;
+      &:hover {
+        border: 1px solid $color-black-16;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &__required {
+    color: $color-new-red;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  &__invalid {
+    border: 1px solid $color-new-red;
+  }
+
+  &__input:focus {
+    border: 2px solid $color-black-60;
+    box-shadow: inset 0px 3px 6px $color-black-03;
+  }
+
+  //
+
+  &__search-icon {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid $color-light-grey;
+    border-left: 1px solid $color-light-grey;
+    border-bottom: 1px solid $color-light-grey;
+    border-radius: 5rem;
+    height: 5.8rem;
+    font-size: 2.2rem;
+    padding: 0 1.8rem;
+  }
+
+  &__search-input {
+    border: none;
+    border-top: 1px solid $color-light-grey;
+    border-right: 1px solid $color-light-grey;
+    border-bottom: 1px solid $color-light-grey;
+    border-radius: 5rem;
+    height: 5.8rem;
+    font-size: 1.8rem;
+    color: rgba($color-primary, 0.75);
+  }
+
+  &__search-input:focus {
+    color: rgba($color-primary, 1);
+    box-shadow: none;
+    border-top: 1px solid $color-light-grey;
+    border-right: 1px solid $color-light-grey;
+    border-bottom: 1px solid $color-light-grey;
+  }
+
+  //
+
+  &__checkbox {
+    min-width: 2.3rem;
+    height: 2.3rem;
+    margin-top: 0;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    &:checked {
+      background-color: $color-primary;
+      box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25);
+      border: 1px solid $color-primary;
+    }
+    &:focus {
+      border: 1px solid $color-primary;
+
+      box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25);
+    }
+  }
+
+  &__checkbox-label {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    font-weight: 400;
+
+    @include addMediaQuery(desktop) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    // margin-top: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__radio-input {
+    margin-top: 0;
+    min-width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid $color-primary;
+    background-color: rgba(0, 0, 0, 0);
+    &:checked {
+      background-color: $color-primary;
+      box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25);
+      border: 1px solid $color-primary;
+    }
+    &:focus {
+      border: 1px solid $color-primary;
+
+      box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25);
+    }
+  }
+
+  &__radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.3rem;
+
+    // margin-left: 2rem;
+    // @include addMediaQuery(laptop) {
+    //   margin-bottom: 2.3rem;
+    // }
+  }
+
+  &__radio-wrap {
+    display: flex;
+    flex-direction: column;
+    @include addMediaQuery(laptop) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__radio-label {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    font-weight: 400;
+
+    @include addMediaQuery(desktop) {
+      font-size: 1.4rem;
+    }
+  }
+}

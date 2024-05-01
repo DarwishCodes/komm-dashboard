@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+
+  &__wrap {
+    background-color: $color-primary;
+    width: 100%;
+    //   padding: 2.1rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+    @include addMediaQuery(laptop) {
+      text-align: center;
+      padding: 0 0;
+      justify-content: center;
+    }
+  }
+
+  &__logo-box {
+    @include addMediaQuery(laptop) {
+      display: none;
+    }
+  }
+
+  &__profile {
+    height: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+.custom-dropdown {
+  &__button {
+    border-radius: 0;
+    background-color: $color-primary;
+    border: none;
+    height: 8.4rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include addMediaQuery(laptop) {
+      width: 7rem;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:active {
+      background-color: rgba($color-white, 0.15) !important;
+    }
+
+    &:focus {
+      background-color: rgba($color-white, 0.15);
+      outline: 2px solid $color-white;
+    }
+  }
+
+  .btn.show {
+    background-color: rgba($color-white, 0.15);
+  }
+
+  &__picture {
+    border: 1px solid;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    i {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      font-size: 1.4rem;
+      color: rgba($color-white, 0.75);
+    }
+
+    @include addMediaQuery(laptop) {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    color: rgba($color-white, 0.75);
+    font-size: 1.4rem;
+    font-weight: 200;
+
+    @include addMediaQuery(laptop) {
+      display: none;
+    }
+  }
+  &__menu {
+    border: 1px solid $color-black-09;
+    box-shadow: 0px 3px 20px $color-black-16;
+    border-radius: 0;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    padding: 0.9rem 2rem;
+  }
+}

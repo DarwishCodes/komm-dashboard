@@ -1,0 +1,77 @@
+.button {
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  transition: all 80ms ease-in-out;
+
+  &--primary {
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 2px solid $color-primary-80 4px;
+    outline-offset: 5px;
+  }
+
+  &:hover,
+  :active {
+    border: 1px solid $color-primary-80;
+    background-color: $color-primary-80;
+  }
+
+  &--outline {
+  }
+}
+
+.button-link {
+  color: $color-primary;
+  font-size: 1.6rem;
+
+  &:hover,
+  :active {
+    color: $color-dark-lagoon;
+  }
+
+  &:focus {
+    outline: 2px solid $color-dark-lagoon 4px;
+    outline-offset: 5px;
+  }
+}
+
+.button-text {
+}
+
+.button-icon {
+  padding: 0.7rem 0.9rem;
+  border: none;
+  font-size: 1.4rem;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  color: $color-primary-80;
+  border-radius: 3px;
+
+  i {
+    font-size: 1.6rem;
+    color: $color-primary-80;
+  }
+
+  span {
+    margin-left: 0.7rem;
+  }
+
+  &:focus {
+    outline: 2px solid $color-primary-80 4px;
+    outline-offset: 5px;
+  }
+
+  &:hover {
+    background-color: $color-primary-8;
+  }
+}

@@ -1,0 +1,53 @@
+.navigation {
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    transition: all 100ms ease-in-out;
+  }
+
+  &__item:hover &__link::after {
+    opacity: 1;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.8rem 2.3rem;
+    text-decoration: none;
+    min-width: 10rem;
+    i {
+      font-size: 2.4rem;
+      color: $color-white;
+      margin-bottom: 0.6rem;
+
+      @include addMediaQuery(laptop) {
+        font-size: 2.3rem;
+      }
+    }
+
+    @include addMediaQuery(laptop) {
+      min-width: 5rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 200;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: rgba($color-white, 0.15);
+    }
+
+    &--active {
+      background-color: rgba($color-white, 0.15);
+    }
+  }
+}
