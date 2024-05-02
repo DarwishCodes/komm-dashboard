@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="" />
+
+    <title id="title">Komm Dashboard</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-box">
+          <img src="img/logo-2.png" alt="" />
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fa-light fa-bookmark"></i> <span>Favoriten</span></a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="#"
+                ><i class="fa-solid fa-grid-2"></i> <span>Apps</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__profile">
+          <div class="dropdown custom-dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle custom-dropdown__button"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="custom-dropdown__picture"
+                ><i class="fa-regular fa-user"></i
+              ></span>
+              <span class="custom-dropdown__text">Johann Johannson</span>
+            </button>
+            <ul class="dropdown-menu custom-dropdown__menu">
+              <li>
+                <a class="dropdown-item custom-dropdown__item" href="#"
+                  >Über start.Komm.ONE</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item custom-dropdown__item" href="#"
+                  >Abmelden</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item custom-dropdown__item" href="#"
+                  >Abmelden</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tool-bar">
+        <div class="tool-bar__tabs">
+          <a href="#" class="tool-bar__back"
+            ><i class="fa-light fa-chevron-left"></i> Zurück</a
+          >
+          <!-- <a class="tool-bar__tab tool-bar__tab--active" href="#">Alle Apps</a>
+          <a class="tool-bar__tab" href="#">Produkte</a> -->
+          <div class="tool-bar__breadcrumb-line"></div>
+          <a class="tool-bar__breadcrumb-root" href="#">Produkte</a>
+          <span class="tool-bar__breadcrumb-arrow"
+            ><i class="fa-light fa-chevron-right"></i
+          ></span>
+          <a class="tool-bar__breadcrumb-sub" href="#"> Bibliothek</a>
+        </div>
+
+        <div class="tool-bar__search">
+          <div class="input-group search">
+            <span class="input-group-text search__icon-box" id="basic-addon1"
+              ><i class="fa-regular fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control search__input"
+              placeholder="Apps durchsuchen"
+              aria-label="Apps durchsuchen"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="app-header">
+        <div class="app-header__content">
+          <div class="app-header__logo">
+            <img class="app-header__logo" src="img/icon-5.png" alt="" />
+          </div>
+          <div class="app-header__title">
+            <p class="app-header__name">Komm.ONE <span>Digitale Daten</span></p>
+          </div>
+        </div>
+      </div>
+      <section class="section-favorites">
+        <div class="u-margin-bottom-medium">
+          <div class="title">
+            <p class="paragraph paragraph--l title__name">Favoriten</p>
+            <div class="title__line"></div>
+          </div>
+        </div>
+        <div class="row gy-5 gx-lg-5">
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="app-tile app-tile--cyan">
+              <div class="app-tile__top">
+                <div class="app-tile__logo">
+                  <img src="img/icon-18.png" alt="" />
+                </div>
+                <div class="app-tile__title">
+                  <p class="app-tile__name">
+                    Bauhofmanagement <span>Fuhrparkmanagement</span>
+                  </p>
+                </div>
+              </div>
+              <div class="app-tile__line"></div>
+              <div class="app-tile__bottom">
+                <button class="button-icon">
+                  <i class="fa-regular fa-circle-arrow-right"></i>
+                  <span>Mehr Info</span>
+                </button>
+                <button class="button-icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    onresize = (event) => {
+      dynamicHeader();
+    };
+    function dynamicHeader() {
+      let headerHeight = document.querySelector("header").offsetHeight;
+      document.querySelector("main").style.paddingTop = headerHeight + "px";
+    }
+    dynamicHeader();
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        margin: 25,
+        autoWidth: true,
+        autoHeight: true,
+        onInitialized: carouselInitialized,
+        onTranslated: checkArrows,
+        items: 1,
+      });
+      $(".slider__arrow--left").click(function () {
+        $(".owl-carousel").trigger("prev.owl.carousel");
+      });
+
+      $(".slider__arrow--right").click(function () {
+        $(".owl-carousel").trigger("next.owl.carousel");
+      });
+    });
+
+    function carouselInitialized(event) {
+      // Hide the left arrow initially
+      if (event.item.count <= event.page.size) {
+        $(".slider__arrow--left").hide();
+      }
+    }
+
+    function checkArrows(event) {
+      if (event.item.index === 0) {
+        $(".slider__arrow--left").hide();
+      } else {
+        $(".slider__arrow--left").show();
+      }
+
+      console.log(event.item.index, event.item.count, event.page.count);
+
+      if (event.page.index >= event.page.count - 1) {
+        $(".slider__arrow--right").hide();
+        console.log("hide");
+      } else {
+        $(".slider__arrow--right").show();
+        console.log("show");
+      }
+    }
+  </script>
+</html>
