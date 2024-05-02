@@ -8,9 +8,14 @@
   z-index: 1;
   flex-wrap: wrap;
   min-height: 6.2rem;
+  position: fixed;
+  z-index: 999999;
+  top: 8.4rem;
+  width: 100%;
 
   @include addMediaQuery(laptop) {
     flex-direction: column-reverse;
+    top: 0;
   }
 
   &__title {

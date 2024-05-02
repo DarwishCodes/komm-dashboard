@@ -12,6 +12,16 @@
     margin: 0;
   }
 
+  &--sticky {
+    position: fixed;
+    top: 14.6rem;
+    z-index: 9999;
+
+    @include addMediaQuery(laptop) {
+      top: unset;
+      bottom: 8.4rem;
+    }
+  }
   &__close {
     position: absolute;
     right: 3.5rem;
