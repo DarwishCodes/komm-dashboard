@@ -773,6 +773,9 @@ body {
   z-index: 999999;
   background-color: #003a40;
   min-height: 8.4rem; }
+  @media (max-width: 992px) {
+    .header {
+      min-height: unset; } }
   .header__wrap {
     position: fixed;
     z-index: 999999;
@@ -789,6 +792,9 @@ body {
         padding: 0 0;
         justify-content: center;
         bottom: 0; } }
+    .header__wrap--sign-in {
+      bottom: unset;
+      top: 0; }
   @media (max-width: 992px) {
     .header__logo-box {
       display: none; } }
