@@ -22,6 +22,11 @@
 
   &__tabs {
     display: flex;
+    overflow: auto;
+    min-width: 25rem;
+    @include addMediaQuery(tablet) {
+      width: 100%;
+    }
   }
 
   &__search {
@@ -39,6 +44,10 @@
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem;
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.4rem;
+    }
 
     &:hover {
       background-color: $color-primary-8;
@@ -74,6 +83,17 @@
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem;
+    display: flex;
+    align-items: baseline;
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.4rem;
+    }
+
+    i {
+      margin-right: 1rem;
+      display: inline-block;
+    }
 
     &:hover {
       background-color: $color-primary-8;
@@ -92,6 +112,10 @@
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem;
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.4rem;
+    }
     &:hover {
       background-color: $color-primary-8;
       color: $color-primary;
@@ -106,6 +130,10 @@
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem;
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.4rem;
+    }
     &:hover {
       background-color: $color-primary-8;
       color: $color-primary;
@@ -120,6 +148,10 @@
     font-weight: 600;
     padding: 1.7rem 0rem;
     margin: 0 0rem;
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.4rem;
+    }
     &:hover {
       background-color: $color-primary-8;
       color: $color-primary;

@@ -548,6 +548,9 @@ body {
 .search {
   width: 29rem;
   flex-wrap: nowrap; }
+  @media (max-width: 768px) {
+    .search {
+      width: 100%; } }
   .search__icon-box {
     background-color: #ffffff;
     border: none;
@@ -783,7 +786,12 @@ body {
       margin-top: 2rem;
       margin-bottom: 1rem; } }
   .tool-bar__tabs {
-    display: flex; }
+    display: flex;
+    overflow: auto;
+    min-width: 25rem; }
+    @media (max-width: 768px) {
+      .tool-bar__tabs {
+        width: 100%; } }
   @media (max-width: 992px) {
     .tool-bar__search {
       margin-top: 2rem;
@@ -796,6 +804,9 @@ body {
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem; }
+    @media (max-width: 768px) {
+      .tool-bar__tab {
+        font-size: 1.4rem; } }
     .tool-bar__tab:hover {
       background-color: #003a4014;
       color: #003a40; }
@@ -820,7 +831,15 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     padding: 1.7rem 1.2rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    display: flex;
+    align-items: baseline; }
+    @media (max-width: 768px) {
+      .tool-bar__back {
+        font-size: 1.4rem; } }
+    .tool-bar__back i {
+      margin-right: 1rem;
+      display: inline-block; }
     .tool-bar__back:hover {
       background-color: #003a4014;
       color: #003a40; }
@@ -832,6 +851,9 @@ body {
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem; }
+    @media (max-width: 768px) {
+      .tool-bar__breadcrumb-root {
+        font-size: 1.4rem; } }
     .tool-bar__breadcrumb-root:hover {
       background-color: #003a4014;
       color: #003a40; }
@@ -843,6 +865,9 @@ body {
     font-weight: 600;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem; }
+    @media (max-width: 768px) {
+      .tool-bar__breadcrumb-sub {
+        font-size: 1.4rem; } }
     .tool-bar__breadcrumb-sub:hover {
       background-color: #003a4014;
       color: #003a40; }
@@ -854,6 +879,9 @@ body {
     font-weight: 600;
     padding: 1.7rem 0rem;
     margin: 0 0rem; }
+    @media (max-width: 768px) {
+      .tool-bar__breadcrumb-arrow {
+        font-size: 1.4rem; } }
     .tool-bar__breadcrumb-arrow:hover {
       background-color: #003a4014;
       color: #003a40; }
