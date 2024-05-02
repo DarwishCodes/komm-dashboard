@@ -869,7 +869,8 @@ body {
   @media (max-width: 992px) {
     .tool-bar__search {
       margin-top: 2rem;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      width: 100%; } }
   .tool-bar__tab {
     position: relative;
     text-decoration: none;
