@@ -1,5 +1,29 @@
 .section-favorites {
-  padding: 4rem;
+  padding: 1rem 4rem;
+  min-height: calc(100vh - 14.6rem);
+
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 14.6rem);
+  }
+
+  &__icon {
+    i {
+      font-size: 6.1rem;
+      color: $color-lagoon;
+    }
+  }
+
+  &__text {
+    min-width: 40rem;
+
+    @include addMediaQuery(tablet) {
+      min-width: 100%;
+    }
+  }
 }
 
 .slider {
