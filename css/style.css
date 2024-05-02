@@ -437,7 +437,7 @@ body {
   padding: 1.4rem 2rem; }
   .custom-form__input--text-area {
     height: auto; }
-  .custom-form__input--required {
+  .custom-form__input--error {
     border: 1px solid #de3400; }
   .custom-form__input:hover {
     border: 1px solid #0000008c; }
@@ -632,6 +632,36 @@ body {
   .sign-in__error {
     font-size: 1.6rem;
     color: #de3400; }
+  .sign-in__requiremnts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    @media (max-width: 992px) {
+      .sign-in__requiremnts {
+        flex-direction: column-reverse; } }
+    .sign-in__requiremnts--error {
+      color: #de3400; }
+  .sign-in__requiremnts-vaildation {
+    width: 50%; }
+    @media (max-width: 992px) {
+      .sign-in__requiremnts-vaildation {
+        width: 100%; } }
+  .sign-in__requiremnts-success {
+    color: #81a000;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0; }
+  .sign-in__requiremnts-normal {
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0; }
+  .sign-in__requiremnts-rules {
+    width: 50%; }
+    @media (max-width: 992px) {
+      .sign-in__requiremnts-rules {
+        width: 100%;
+        margin-top: 2rem; } }
 
 .slider {
   position: relative;

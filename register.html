@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="" />
+
+    <title id="title">Komm Dashboard</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-box header__logo-box--keep">
+          <img class="header__logo" src="img/logo-2.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-sign-in">
+        <div class="sign-in">
+          <div class="sign-in__logo-box">
+            <img class="sign-in__logo" src="img/icon-17.png" alt="ICON" />
+            <div class="sign-in__title-box">
+              <span class="sign-in__title">Komm.ONE</span>
+              <span class="sign-in__title sign-in__title--bold"
+                >start.Komm.ONE</span
+              >
+            </div>
+          </div>
+          <div class="u-line"></div>
+          <div class="message message--info">
+            <p class="message__text">
+              Ihr Passwort wurde erfolgreich geändert.
+            </p>
+          </div>
+          <div class="u-center-text u-margin-top-medium u-margin-bottom-medium">
+            <h1 class="heading-primary">Neues Passwort vergeben</h1>
+          </div>
+          <div class="sign-in__form">
+            <div class="u-margin-top-small">
+              <label for="email" class="form-label custom-form__input-label"
+                >Benutzer</label
+              >
+              <input
+                type="email"
+                class="form-control custom-form__input"
+                id="email"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+
+            <div class="u-margin-top-small">
+              <label for="password" class="form-label custom-form__input-label"
+                >Altes Passwort</label
+              >
+              <input
+                type="password"
+                class="form-control custom-form__input"
+                id="password"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="sign-in__forget">
+              <a class="button-link" href="#"> Passwort vergessen? </a>
+            </div>
+            <div class="u-margin-top-small">
+              <label for="password" class="form-label custom-form__input-label"
+                >Neues Passwort</label
+              >
+              <input
+                type="password"
+                class="form-control custom-form__input"
+                id="password"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-top-small">
+              <label for="password" class="form-label custom-form__input-label"
+                >Neues Passwort bestätigen</label
+              >
+              <input
+                type="password"
+                class="form-control custom-form__input"
+                id="password"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+
+            <!-- add this class show error sign-in__requiremnts--error -->
+            <div class="sign-in__requiremnts">
+              <div class="sign-in__requiremnts-vaildation">
+                <div class="u-margin-bottom-small u-margin-top-small">
+                  <p class="paragraph">Passwort Anforderungen:</p>
+                </div>
+                <span class="sign-in__requiremnts-success"
+                  ><i class="fa-solid fa-circle-check"></i> 10 Zeichen
+                  mind.</span
+                >
+                <div class="u-margin-top-small">
+                  <p class="paragraph">3 von 4 Anforderungen:</p>
+                </div>
+                <span class="sign-in__requiremnts-normal">
+                  <i class="fa-regular fa-circle"></i> 10 Zeichen mind.</span
+                >
+                <span class="sign-in__requiremnts-normal">
+                  <i class="fa-regular fa-circle"></i> 10 Zeichen mind.</span
+                >
+                <span class="sign-in__requiremnts-success"
+                  ><i class="fa-solid fa-circle-check"></i> 10 Zeichen
+                  mind.</span
+                >
+                <span class="sign-in__requiremnts-success"
+                  ><i class="fa-solid fa-circle-check"></i> 10 Zeichen
+                  mind.</span
+                >
+              </div>
+              <div class="sign-in__requiremnts-rules">
+                <p class="paragraph">• Keine Benutzer ID</p>
+                <p class="paragraph">• Kein Vor- oder Nachname</p>
+                <p class="paragraph">• Keine alten Passwörter</p>
+                <p class="paragraph">• Eine Änderung pro 24 Stunden</p>
+              </div>
+            </div>
+            <div class="u-margin-bottom-large">
+              <button class="button button--full button--primary">
+                Anmelden
+              </button>
+            </div>
+            <p class="paragraph u-center-text">
+              Fragen zu Ihrem Account?
+              <a class="button-link" href="#">Komm.ONE Mitgliederportal</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
