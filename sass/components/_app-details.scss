@@ -1,0 +1,53 @@
+.app-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   min-height: 15rem;
+  color: $color-primary;
+  background-color: $color-white;
+  border: 1px solid $color-black-09;
+  border-radius: 3px;
+  font-weight: 500;
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 4rem 4rem 1rem 4rem;
+  }
+
+  &__logo {
+    margin-right: 1rem;
+    img {
+      height: 6rem;
+    }
+  }
+  &__title {
+  }
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: $color-black-03;
+  }
+
+  &__name {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0;
+    word-break: break-all;
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    font-size: 1.8rem;
+    padding: 4rem;
+  }
+}

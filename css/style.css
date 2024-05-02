@@ -208,6 +208,60 @@ body {
     justify-content: space-between;
     padding: 0.7rem; }
 
+.app-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #003a40;
+  background-color: #ffffff;
+  border: 1px solid #00000017;
+  border-radius: 3px;
+  font-weight: 500; }
+  .app-details__top {
+    display: flex;
+    align-items: center;
+    padding: 4rem 4rem 1rem 4rem; }
+  .app-details__logo {
+    margin-right: 1rem; }
+    .app-details__logo img {
+      height: 6rem; }
+  .app-details__line {
+    width: 100%;
+    height: 2px;
+    background-color: #00000029; }
+  .app-details__name {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0;
+    word-break: break-all; }
+    .app-details__name span {
+      display: block;
+      font-weight: 700; }
+  .app-details__bottom {
+    display: flex;
+    padding: 2rem 4rem;
+    flex-wrap: wrap; }
+  .app-details__content {
+    font-size: 1.8rem;
+    padding: 4rem; }
+
+.assistance {
+  background-color: #ebf2d0;
+  padding: 3.5rem 5rem;
+  border: 1px solid #00000017;
+  display: flex;
+  justify-content: baseline;
+  justify-content: space-between;
+  border-radius: 3px; }
+  .assistance__text {
+    min-width: 40rem; }
+    @media (max-width: 992px) {
+      .assistance__text {
+        min-width: 100%; } }
+  @media (max-width: 992px) {
+    .assistance__right {
+      display: none; } }
+
 .button {
   padding: 1rem 2.5rem;
   font-size: 1.6rem;
@@ -217,15 +271,25 @@ body {
     border: 1px solid #003a40;
     background-color: #003a40;
     color: #ffffff; }
+    .button--primary:hover,
+    .button--primary :active {
+      border: 1px solid #003a40cc;
+      background-color: #003a40cc; }
   .button--full {
     width: 100%; }
+  .button--medium {
+    min-width: 15.6rem;
+    border-radius: 3px; }
   .button:focus {
     outline: 2px solid #003a40cc 4px;
     outline-offset: 5px; }
-  .button:hover,
-  .button :active {
-    border: 1px solid #003a40cc;
-    background-color: #003a40cc; }
+  .button--outline {
+    border: 1px solid #003a40;
+    background-color: rgba(255, 255, 255, 0); }
+    .button--outline i {
+      margin-right: 1rem; }
+    .button--outline:hover, .button--outline:active {
+      background-color: #003a4014; }
 
 .button-link {
   color: #003a40;
@@ -256,41 +320,6 @@ body {
     outline-offset: 5px; }
   .button-icon:hover {
     background-color: #003a4014; }
-
-.card-product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3.2rem 3.2rem;
-  box-shadow: 0px 1px 3px #00000029;
-  min-height: 24.8rem;
-  color: #003a40;
-  border-radius: 3px;
-  font-weight: 500; }
-  .card-product__top {
-    display: flex;
-    align-items: center; }
-  .card-product__logo {
-    margin-right: 1rem; }
-    .card-product__logo img {
-      height: 4rem; }
-  .card-product__name {
-    font-size: 2rem;
-    line-height: 1.3; }
-    .card-product__name span {
-      display: block;
-      font-weight: 700; }
-  .card-product__content {
-    font-size: 1.6rem;
-    width: 23.1rem;
-    margin: 0; }
-  .card-product__button-link {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: #003a40; }
-    .card-product__button-link span {
-      text-decoration: underline;
-      margin-right: 0.5rem; }
 
 .custom-dropdown__button {
   border-radius: 0;
@@ -882,15 +911,13 @@ body {
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    color: #003a40cc; }
+    color: #003a40cc;
+    cursor: default; }
     .tool-bar__breadcrumb-arrow i {
       height: 1.8rem; }
     @media (max-width: 768px) {
       .tool-bar__breadcrumb-arrow {
         font-size: 1rem; } }
-    .tool-bar__breadcrumb-arrow:hover {
-      background-color: #003a4014;
-      color: #003a40; }
   .tool-bar__breadcrumb-line {
     width: 1px;
     background-color: #00000017;
