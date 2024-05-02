@@ -65,4 +65,19 @@
       }
     }
   }
+
+  &__back {
+    position: relative;
+    text-decoration: none;
+    color: $color-primary-80;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.7rem 1.2rem;
+    margin: 0 1rem;
+
+    &:hover {
+      background-color: $color-primary-8;
+      color: $color-primary;
+    }
+  }
 }

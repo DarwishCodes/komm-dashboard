@@ -1,6 +1,7 @@
 .message {
+  position: relative;
   border: 1px solid $color-black-09;
-  padding: 2rem 3.5rem;
+  padding: 2rem 6.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,6 +10,18 @@
   &__text {
     font-size: 1.4rem;
     margin: 0;
+  }
+
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 50%;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+
+    i {
+      font-size: 2rem;
+    }
   }
   &--info {
     background-color: $color-info-light;
