@@ -789,7 +789,7 @@ body {
     display: flex;
     overflow: auto;
     min-width: 25rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .tool-bar__tabs {
         width: 100%; } }
   @media (max-width: 992px) {
@@ -862,7 +862,7 @@ body {
     text-decoration: none;
     color: #003a40cc;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 1.7rem 1.2rem;
     margin: 0 1rem; }
     @media (max-width: 768px) {
@@ -878,10 +878,16 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     padding: 1.7rem 0rem;
-    margin: 0 0rem; }
+    margin: 0 0rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    color: #003a40cc; }
+    .tool-bar__breadcrumb-arrow i {
+      height: 1.8rem; }
     @media (max-width: 768px) {
       .tool-bar__breadcrumb-arrow {
-        font-size: 1.4rem; } }
+        font-size: 1rem; } }
     .tool-bar__breadcrumb-arrow:hover {
       background-color: #003a4014;
       color: #003a40; }
