@@ -7,6 +7,13 @@
   background-position: right;
   background-size: auto 100%;
 
+  @include addMediaQuery(laptop) {
+    padding: 4rem 6.2rem;
+    background-image: unset;
+    display: flex;
+    justify-content: center;
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -17,6 +24,14 @@
     margin-right: 1rem;
     img {
       height: 7rem;
+
+      @include addMediaQuery(laptop) {
+        height: 3.5rem;
+      }
+    }
+
+    @include addMediaQuery(laptop) {
+      margin: 0.5rem;
     }
   }
 
@@ -28,6 +43,10 @@
     span {
       display: block;
       font-weight: 700;
+    }
+
+    @include addMediaQuery(tablet) {
+      font-size: 1.6rem;
     }
   }
 }
