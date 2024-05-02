@@ -345,6 +345,46 @@ body {
   font-size: 1.6rem;
   padding: 0.9rem 2rem; }
 
+.folder-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #003a40;
+  background-color: #ffffff;
+  border: 1px solid #00000017;
+  border-radius: 3px;
+  font-weight: 500; }
+  .folder-tile__top {
+    display: flex;
+    align-items: center;
+    padding: 2rem; }
+  .folder-tile__logo {
+    margin-right: 1rem; }
+    .folder-tile__logo img {
+      height: 5rem; }
+  .folder-tile__line {
+    width: 100%;
+    height: 2px;
+    background-color: #00000029; }
+  .folder-tile__name {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 0;
+    word-break: break-all; }
+    .folder-tile__name span {
+      display: block;
+      font-weight: 700; }
+  .folder-tile__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 2rem 0;
+    border-left: 1px solid #0000001a; }
+  .folder-tile__number {
+    font-size: 1.6rem; }
+
 .custom-form__group {
   display: flex;
   align-items: center;
