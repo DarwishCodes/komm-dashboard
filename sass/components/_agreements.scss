@@ -1,0 +1,96 @@
+.agreements {
+  border: 1px solid $color-black-03;
+  box-shadow: 0px 3px 2rem $color-black-16;
+  width: 60rem;
+  background-color: $color-white;
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__logo {
+    height: 4.2rem;
+    margin-right: 1.2rem;
+  }
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    padding: 2.1rem 1.4rem;
+
+    @include addMediaQuery(tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__forget {
+    text-align: right;
+    margin: 1rem 0 3rem 0;
+  }
+
+  &__form {
+    padding: 0 7.1rem 1rem 7.1rem;
+
+    @include addMediaQuery(tablet) {
+      padding: 0 3rem 1rem 3rem;
+    }
+  }
+
+  &__error {
+    font-size: 1.6rem;
+    color: $color-new-red;
+  }
+
+  &__requiremnts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    @include addMediaQuery(laptop) {
+      flex-direction: column-reverse;
+    }
+    &--error {
+      color: $color-new-red;
+    }
+  }
+
+  &__requiremnts-vaildation {
+    width: 50%;
+
+    @include addMediaQuery(laptop) {
+      width: 100%;
+    }
+  }
+
+  &__requiremnts-success {
+    color: $color-apple-green;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  &__requiremnts-normal {
+    font-size: 1.4rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  &__requiremnts-rules {
+    width: 50%;
+
+    @include addMediaQuery(laptop) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+}

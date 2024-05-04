@@ -7,6 +7,7 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/agreements";
 @import "components/app-bundle";
 @import "components/app-tile";
 @import "components/app-details";
@@ -28,5 +29,6 @@
 @import "layout/navigation";
 @import "layout/title-bar";
 
+@import "pages/agreements";
 @import "pages/home";
 @import "pages/sign-in";
