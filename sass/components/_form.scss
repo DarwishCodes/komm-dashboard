@@ -189,4 +189,50 @@
       font-size: 1.4rem;
     }
   }
+
+  &__dropdown {
+    .show {
+      background-color: $color-primary;
+    }
+  }
+
+  &__dropdown-toggle {
+    background-color: $color-white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 2rem;
+    color: $color-primary;
+    font-weight: 500;
+    border: 1px solid #00000029;
+    &--full {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+
+    &:active {
+      background-color: $color-light-grey !important;
+      color: $color-primary !important;
+    }
+  }
+
+  &__dropdown-menu {
+    background-color: $color-white !important;
+    width: 100%;
+  }
+
+  &__dropdown-item {
+    color: $color-primary;
+    font-size: 1.6rem;
+    padding: 0.9rem 2rem;
+
+    &:active {
+      background-color: $color-primary;
+    }
+  }
 }

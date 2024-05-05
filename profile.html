@@ -21,9 +21,6 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/svg" href="" />
 
@@ -39,13 +36,13 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#"
-                ><i class="fa-light fa-bookmark"></i> <span>Favoriten</span></a
+              <a class="navigation__link navigation__link--active" href="#"
+                ><i class="fa-solid fa-bookmark"></i> <span>Favoriten</span></a
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="#"
-                ><i class="fa-solid fa-grid-2"></i> <span>Apps</span></a
+              <a class="navigation__link" href="#"
+                ><i class="fa-light fa-grid-2"></i> <span>Apps</span></a
               >
             </li>
           </ul>
@@ -91,13 +88,9 @@
         </div>
       </div>
       <div class="tool-bar">
-        <div class="tool-bar__tabs">
-          <a class="tool-bar__tab tool-bar__tab--active" href="#">Alle Apps</a>
-          <a class="tool-bar__tab" href="#">Produkte</a>
+        <div class="tool-bar__title">
+          <p class="paragraph paragraph--l">Willkommen zurück, Johann</p>
         </div>
-        <!-- <a href="#" class="tool-bar__back"
-          ><i class="fa-light fa-chevron-left"></i> Zurück</a
-        > -->
         <div class="tool-bar__search">
           <div class="input-group search">
             <span class="input-group-text search__icon-box" id="basic-addon1"
@@ -116,38 +109,138 @@
     </header>
 
     <main class="main">
-      <section class="section-favorites">
-        <div class="u-margin-bottom-medium">
-          <div class="title">
-            <p class="paragraph paragraph--l title__name">
-              Verfügbare Produkte
-            </p>
-            <div class="title__line"></div>
-          </div>
-        </div>
-        <div class="row gy-5 gx-lg-5">
+      <div class="section-profile">
+        <div class="row">
+          <div class="col-4"></div>
           <div class="col-lg-4">
-            <div class="folder-tile folder-tile--cyan">
-              <div class="folder-tile__top">
-                <div class="folder-tile__logo">
-                  <img src="img/icon-18.png" alt="" />
-                </div>
-                <div class="folder-tile__title">
-                  <p class="folder-tile__name">
-                    Bauhofmanagement <span>Fuhrparkmanagement</span>
-                  </p>
-                </div>
-              </div>
-              <div class="folder-tile__right">
-                <button class="button-icon">
-                  <i class="fa-regular fa-grid-2"></i>
+            <div class="u-margin-bottom-medium u-margin-top-large">
+              <label for="email" class="form-label custom-form__input-label"
+                >* E-Mail</label
+              >
+              <input
+                type="email"
+                class="form-control custom-form__input"
+                id="email"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label for="username" class="form-label custom-form__input-label"
+                >* Username</label
+              >
+              <input
+                type="text"
+                class="form-control custom-form__input"
+                id="username"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label
+                for="first-name"
+                class="form-label custom-form__input-label"
+                >* First Name</label
+              >
+              <input
+                type="text"
+                class="form-control custom-form__input"
+                id="first-name"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label for="last-name" class="form-label custom-form__input-label"
+                >* Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control custom-form__input"
+                id="last-name"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label for="address" class="form-label custom-form__input-label"
+                >* Address</label
+              >
+              <input
+                type="text"
+                class="form-control custom-form__input"
+                id="address"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label for="city" class="form-label custom-form__input-label"
+                >* City</label
+              >
+              <input
+                type="text"
+                class="form-control custom-form__input"
+                id="city"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+            <div class="u-margin-bottom-medium">
+              <label for="phone" class="form-label custom-form__input-label"
+                >* Phone</label
+              >
+              <input
+                type="number"
+                class="form-control custom-form__input"
+                id="phone"
+                aria-describedby="basic-addon3"
+              />
+            </div>
+
+            <div class="u-margin-bottom-medium">
+              <div class="dropdown custom-form__dropdown">
+                <label for="phone" class="form-label custom-form__input-label"
+                  >* Phone</label
+                >
+                <button
+                  class="btn btn-secondary dropdown-toggle custom-form__dropdown-toggle custom-form__dropdown-toggle--full"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown button
                 </button>
-                <span class="folder-tile__number">14</span>
+                <ul class="dropdown-menu custom-form__dropdown-menu">
+                  <li>
+                    <a class="dropdown-item custom-form__dropdown-item" href="#"
+                      >Action</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item custom-form__dropdown-item" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item custom-form__dropdown-item" href="#"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
+
+            <div class="u-margin-bottom-medium">
+              <label for="email" class="form-label custom-form__input-label"
+                >* Zip</label
+              >
+              <input
+                type="number"
+                class="form-control custom-form__input"
+                id="number"
+                aria-describedby="basic-addon3"
+              />
+            </div>
           </div>
+          <div class="col-4"></div>
         </div>
-      </section>
+      </div>
     </main>
   </body>
   <script
@@ -205,5 +298,6 @@
       }
     }
   </script>
+
   <script src="js/script.js"></script>
 </html>

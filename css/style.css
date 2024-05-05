@@ -773,6 +773,39 @@ body {
     .custom-form__radio-label {
       font-size: 1.4rem; } }
 
+.custom-form__dropdown .show {
+  background-color: #003a40; }
+
+.custom-form__dropdown-toggle {
+  background-color: #ffffff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 2rem;
+  color: #003a40;
+  font-weight: 500;
+  border: 1px solid #00000029; }
+  .custom-form__dropdown-toggle--full {
+    width: 100%; }
+  .custom-form__dropdown-toggle:hover {
+    background-color: #ffffff;
+    color: #003a40; }
+  .custom-form__dropdown-toggle:active {
+    background-color: #f5f5f5 !important;
+    color: #003a40 !important; }
+
+.custom-form__dropdown-menu {
+  background-color: #ffffff !important;
+  width: 100%; }
+
+.custom-form__dropdown-item {
+  color: #003a40;
+  font-size: 1.6rem;
+  padding: 0.9rem 2rem; }
+  .custom-form__dropdown-item:active {
+    background-color: #003a40; }
+
 .message {
   position: relative;
   border: 1px solid #00000017;
@@ -1356,6 +1389,10 @@ body {
 
 .slider {
   padding: 0 4.3rem; }
+
+.section-profile {
+  padding: 1rem 4rem;
+  min-height: calc(100vh - 14.6rem); }
 
 .section-sign-in {
   max-height: 100%;
