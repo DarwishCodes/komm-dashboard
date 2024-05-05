@@ -494,16 +494,17 @@ body {
 
 .calendar_header {
   width: 100%;
-  text-align: center; }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 1rem; }
 
 .calendar_header h2 {
-  padding: 0 10px;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   float: left;
-  width: 70%;
-  margin: 0px 0 10px; }
+  margin: 0; }
 
 .card-box {
   background-color: #00b2a9;
