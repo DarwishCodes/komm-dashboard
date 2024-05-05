@@ -507,6 +507,7 @@ body {
 
 .card-box {
   background-color: #00b2a9;
+  height: auto;
   min-height: 16rem; }
   .card-box--white {
     background-color: #ffffff; }
@@ -523,7 +524,7 @@ body {
     align-items: center;
     height: 100%; }
     .card-box__icon img {
-      width: 50%; }
+      height: 5rem; }
   .card-box__title {
     font-size: 1.8rem;
     color: #003a40;
