@@ -72,5 +72,11 @@
   &__item {
     font-size: 1.6rem;
     padding: 0.9rem 2rem;
+
+    &:active,
+    &:focus {
+      background-color: $color-light-grey;
+      color: $color-primary;
+    }
   }
 }

@@ -590,6 +590,9 @@ body {
 .custom-dropdown__item {
   font-size: 1.6rem;
   padding: 0.9rem 2rem; }
+  .custom-dropdown__item:active, .custom-dropdown__item:focus {
+    background-color: #f5f5f5;
+    color: #003a40; }
 
 .folder-tile {
   display: flex;
