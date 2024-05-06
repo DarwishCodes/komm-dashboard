@@ -1031,7 +1031,7 @@ body {
   border-bottom-right-radius: 3px;
   overflow: hidden;
   padding: 2.4rem;
-  color: #003a40; }
+  color: #ffffff; }
 
 .slide-content .card-title {
   text-align: left;
@@ -1126,7 +1126,8 @@ body {
 .weather-box {
   background-color: #00b2a9;
   min-height: 15rem;
-  border: none; }
+  border: none;
+  color: #ffffff; }
   .weather-box__body {
     padding: 2.4rem; }
   .weather-box__number {
