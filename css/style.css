@@ -1053,7 +1053,9 @@ body {
 @keyframes fade {
   0% {
     opacity: 0; }
-  50% {
+  20% {
+    opacity: 1; }
+  90% {
     opacity: 1; }
   100% {
     opacity: 0; } }
